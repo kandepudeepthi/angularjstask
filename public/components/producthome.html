@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Sample Example</title>
+<style type="text/css">
+	.js-color{
+		    color: deepskyblue;
+	}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1 class="text-center js-color">Restarent Locations List</h1><br>
+<div>
+<form class="text-center">
+				<div class="input-group text-center" style="margin-left:590">
+					<input type="text" class="form-control border border-right-0" placeholder="Search..." ng-model="searchid">
+					&nbsp&nbsp
+					<span class="input-group-append">
+						<button class="btn btn-outline-secondary border border-left-0 js-color" type="button" ng-click="listLocation(searchid)">
+							Search
+						</button>
+					</span>
+				</div>
+			</form>
+</div>
+ <div class="container js-mainTable" style="display: none;margin-left: 255px;">
+
+ <div class="item item-icon-right" ng-repeat="admin in myWelcome">
+              
+  <table class="table">
+    <thead>
+      <tr class="js-color">
+        <th>Identifier</th>
+        <th>EventDate</th>
+        <th>Title</th>
+        <th>Location</th>
+        <th>Venue</th>
+        <th>EventType</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{admin.Identifier}}</td>
+        <td>{{admin.EventDate}}</td>
+        <td>{{admin.Title}}</td>
+        <td>{{admin.Location}}</td>
+        <td>{{admin.Venue}}</td>
+        <td>{{admin.EventType}}</td>
+      </tr>
+    </tbody>
+  </table>
+ </div>
+ </div>
+
+
+</body>
+</html>
