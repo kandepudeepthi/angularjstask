@@ -1,6 +1,6 @@
 # angularjstask
 
-gti clone https://github.com/kandepudeepthi/angularjstask.git
-cd angularjstask
-npm install
+git clone https://github.com/kandepudeepthi/angularjstask.git<br>
+cd angularjstask<br>
+npm install<br>
 nodemon
